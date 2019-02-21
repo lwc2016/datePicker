@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+	<style type="text/css">
+		input{
+			margin: 100px;
+			margin-left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<input id="datePicker" type="" name="">
+	<!--<div class="ui-datepicker-wrapper"></div>-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 	<script type="text/javascript" src="dist/js/datePicker.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var datePicker = new DatePicker({
+				element: "#datePicker",
+				onSelected: function(val){
+					console.log(val);
+				}
+			});
+			datePicker.init();
+		});
+	</script>
+</body>
+</html>
